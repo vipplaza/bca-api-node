@@ -1,18 +1,24 @@
 {
   "name": "bca-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "BCA(Bank Central Asia) settlement information fetcher written by ES7(NodeJS)",
+  "main": "index.js",
+  "repository": "https://github.com/vipplaza/bca-api-node",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:local": "babel-node test/main.js -e local",
+    "test:sandbox": "babel-node test/main.js -e sandbox",
+    "build": "babel src/bca.js --out-file dist/bca.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "shogochiai <shogo1104@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "async-child-process": "^1.1.1",
     "await-fs": "^1.0.0",
     "commander": "^2.11.0",
-    "exec-promise": "^0.7.0",
-    "node-libcurl": "^1.2.0"
+    "exec-promise": "^0.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }

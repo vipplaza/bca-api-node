@@ -1,17 +1,17 @@
-const program = require('commander');
-const { BCA } = require("../src/bca")
-const { BCAMock } = require("./bca_mock")
-const fs = require('await-fs');
+import program from 'commander'
+import BCA from '../src/bca'
+import BCAMock from './bca_mock'
+import fs from 'await-fs'
 
 program
   .version('0.0.1')
   .option('-e, --env [name]', 'Specify environment', 'local')
-  .parse(process.argv);
+  .parse(process.argv)
 
 
 class BcaTest {
   static async getIndex(conf) {
-    var bca = null;
+    var bca = null
     if (program.env === "local") {
       bca = new BCAMock()
     } else {
@@ -29,8 +29,8 @@ BcaTest.getIndex()
   var target = Object.keys(res[0])
   var answer = ['TransactionDate','BranchCode','TransactionType','TransactionAmount','TransactionName','Trailer']
   var testResult = target.sort().toString() == answer.sort().toString()   
-  console.log(testResult);
+  console.log(testResult)
 })
 .catch(err=>{
-  console.error("error: "+err);  
+  console.error("error: "+err)
 })
