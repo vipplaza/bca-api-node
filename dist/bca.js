@@ -89,7 +89,7 @@ class BCA {
       var path = '/utilities/signature';
 
       var now = new Date();
-      // now = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),  now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+      // now = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),  now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds())
       var timestamp = now.toISOString();
       var offset = -1 * now.getTimezoneOffset() / 60 + "";
       timestamp = timestamp + "000+" + offset.padStart(2, 0) + ":00";

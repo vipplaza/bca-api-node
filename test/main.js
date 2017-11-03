@@ -5,7 +5,7 @@ import fs from 'await-fs'
 
 program
   .version('0.0.1')
-  .option('-e, --env [name]', 'Specify environment', 'local')
+  .option('--env [name]', 'Specify environment', 'local')
   .parse(process.argv)
 
 
