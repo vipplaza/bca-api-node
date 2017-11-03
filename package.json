@@ -1,6 +1,6 @@
 {
   "name": "bca-api",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "BCA(Bank Central Asia) settlement information fetcher written by ES7(NodeJS)",
   "main": "index.js",
   "repository": {
@@ -11,7 +11,7 @@
     "test:local": "babel-node test/main.js --env local",
     "test:sandbox": "babel-node test/main.js --env sandbox",
     "build": "babel src/bca.js --out-file dist/bca.js",
-    "install": "npm i --build-from-source"
+    "postinstall": "./bin/pack.sh"
   },
   "author": "shogochiai <shogo1104@gmail.com>",
   "license": "MIT",
