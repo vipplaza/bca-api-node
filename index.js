@@ -1,1 +1,1 @@
-require('./dist/bca')
+module.exports = require('./dist/bca').default
