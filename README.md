@@ -13,10 +13,15 @@
 - Tried to use `axios` but some difficulty regarding headers format was there. (I'm waiting for your pull-request!)
 - `bca-php` worked well, so I choosed same way.
 
-## How to test before contribution
+## How to be a commiter!
 - `npm i`
 - `npm install node-libcurl --build-from-source`
 - `npm run test`
+- Write some code
+- Make pull-req, fork, copy and change name by your hand
+- `npm tag <your version>`
+- Update version on `package.json`
+- `npm publish`
 
 ## How to publish as npm package
 - `npm run build`
