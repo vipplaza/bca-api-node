@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "BCA(Bank Central Asia) settlement information fetcher written by ES7(NodeJS)",
   "main": "index.js",
-  "repository": "https://github.com/vipplaza/bca-api-node",
+  "repository" : {     
+    "type" : "git",
+    "url" : "https://github.com/vipplaza/bca-api-node"
+  }
   "scripts": {
     "test:local": "babel-node test/main.js -e local",
     "test:sandbox": "babel-node test/main.js -e sandbox",
