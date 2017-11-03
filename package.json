@@ -1,0 +1,18 @@
+{
+  "name": "bca-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-child-process": "^1.1.1",
+    "await-fs": "^1.0.0",
+    "commander": "^2.11.0",
+    "exec-promise": "^0.7.0",
+    "node-libcurl": "^1.2.0"
+  }
+}
