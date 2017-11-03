@@ -1,6 +1,6 @@
 {
   "name": "bca-api",
-  "version": "1.0.7-alpha.5",
+  "version": "1.0.8",
   "description": "BCA(Bank Central Asia) settlement information fetcher written by ES7(NodeJS)",
   "main": "index.js",
   "repository": {
